@@ -1,0 +1,100 @@
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left bottom,#19abff,rgb(204, 109, 0));
+    border-bottom: 2px, solid, white;
+}
+
+.logoHeaderContainer{
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding-inline: 100px;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+    background-color: #ffffff87;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+.mainDigmonContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* background-image: linear-gradient(to right,#19abff,rgb(204, 0, 0)); */
+    color: white;
+
+    font-family: serif;
+}
+
+.listDigmonContainer{
+    width: 120px;
+    height: 80px;
+
+    transition: 0.7s;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.listDigmonContainer:hover{
+    transition: 0.7s;
+    background-color: rgba(156, 156, 156, 0.486);
+    border-color: black;
+    border-radius: 20px;
+}
+
+.imageDigmonContainer{
+    width: 120px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.buttonMoreInfoContainer{
+    width: 85px;
+    height: 22px;
+    background-color: rgba(105, 200, 83, 0.663);
+    color: white;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: black;
+    transition: 0.5s;
+}
+
+.buttonMoreInfoContainer:hover{
+    box-shadow: -2px 2px 2px white;
+    border-color: white;
+    background-color: rgb(0, 255, 17);
+    transition: 0.5s;
+}

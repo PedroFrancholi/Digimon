@@ -11,7 +11,7 @@ function App() {
       element:<DigmonMain/>
     },
     {
-      path:"/:id",
+      path:'detail/:id',
       element:<DigmonDetails/>
     }
   ])

@@ -1,21 +1,31 @@
-.headerContainer{
+.headerDetailsContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to left bottom,#19abff,rgb(204, 109, 0));
+    background-image: linear-gradient(to left top,#19abff,rgb(204, 109, 0));
     border-bottom: 2px, solid, white;
 }
 
-.logoHeaderContainer{
+.logoHeaderDetailsContainer{
     height: 100px;
     width: auto;
     margin-top: 20px;
+    transition: 0.8s;
+}
+
+.logoHeaderDetailsContainer:hover{
+    height: 150px;
+    width: auto;
+    transform: rotate(-360deg);
+    transition: 0.8s;
+    cursor: pointer;
 }
 
 .textHeaderDetailContainer{
     color: white;
     text-shadow: 2px 2px 2px black;
+    
 }
 
 .detailContainer{
@@ -25,4 +35,102 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bodyDetailsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20px;
+    margin-top: 20px;
+}
+
+.mainDetailsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    font-family: serif;
+    text-shadow: 2px 2px 2px black;
+    background-image: linear-gradient(to left top,#19abff,rgb(204, 109, 0));
+
+}
+
+.contentDetailsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 250px;
+    width: 200px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: aqua;
+    background-color: rgba(0, 179, 255, 0.455);
+
+}
+
+.imgDetailsContainer{
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.imgDetailsContainer:hover{
+    height: 110px;
+    width: 110px;
+
+    transform: rotate(-12deg);
+    transition: 0.5s;
+}
+
+.divButtonsContainer{
+    display: flex;
+    flex-direction: row;
+
+    gap: 25px;
+
+}
+
+.buttonHomeDetailsContainer{
+    height: 25px;
+    width: 60px;
+    border-radius: 8px;
+
+    background-color: #fdf699;
+
+    font-family: serif;
+    transition: 0.4s;
+}
+
+.buttonHomeDetailsContainer:hover{
+    background-color: #59c2ff;
+    box-shadow: 1px 1px 2px rgb(0, 64, 116);
+
+
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.buttonReturnDetailsContainer{
+    height: 25px;
+    width: 60px;
+    border-radius: 8px;
+    background-color: #59c2ff;
+
+    font-family: serif;
+    transition: 0.4s;
+}
+
+.buttonReturnDetailsContainer:hover{
+    background-color: #fdf699;
+    box-shadow: 1px 1px 2px rgb(107, 129, 0);
+    transition: 0.4s;
+    cursor: pointer;
 }

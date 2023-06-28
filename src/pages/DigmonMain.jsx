@@ -18,7 +18,7 @@ const DigmonMain = () => {
     },[])
 
     const onClickButton = (id) =>{
-        navigate(`/${id}`)
+        navigate(`detail/${id}`)
     }
 
     useEffect(()=>{

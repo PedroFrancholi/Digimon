@@ -18,34 +18,40 @@ const DigmonDetails = () => {
     }
 },[])
 
+    //Tentativa de selecionar o Digmon recebido por parametro
+    // const filterDigmonDetail = () =>{
+    //     return(
+    //     digmonDetails.find(data =>{
+    //         return data.name === id;
+    //     })
+    // ),[]}
+
+    // console.log(filterDigmonDetail)
+
     useEffect(()=>{
         fetchDigmonDetails();
-        filterDigmonDetail([]);
+        // filterDigmonDetail();
     })
-
-    //Tentativa de selecionar o Digmon recebido por parametro
-    let filterDigmonDetail = () =>{
-        digmonDetails.find(data =>{
-            return data.name === id;
-        }
-    )}
-
-    console.log(filterDigmonDetail)
-
+    
     const onClickGoToHome = () =>{
         navigate('/')
     }
 
-    const onClickComeBack= () =>{
+    const onClickComeBack = () =>{
         navigate(-1)
     }
-
-
 
 const renderDigmonDetails = () =>{
         return (
             <body className='bodyDetailsContainer'>
                 <div className='mainDetailsContainer'>
+                    {/* {filterDigmonDetail.map(data =>(
+                        <div className='contentDetailsContainer'>
+                            <h4>{data.name}</h4>
+                            <h4>{data.level}</h4>
+                            <img className='imgDetailsContainer' src={data.img} alt=''/>
+                        </div>
+                    ))} */}
                 {digmonDetails.map(data => (
                         <div className='contentDetailsContainer'>
                             <h4>{data.name}</h4>

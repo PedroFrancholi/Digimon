@@ -1,0 +1,28 @@
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left bottom,#19abff,rgb(204, 109, 0));
+    border-bottom: 2px, solid, white;
+}
+
+.logoHeaderContainer{
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.textHeaderDetailContainer{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.detailContainer{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

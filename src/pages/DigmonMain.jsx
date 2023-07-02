@@ -30,16 +30,13 @@ const DigmonMain = () => {
             
             <body className='container'>
                 <div className='mainDigmonContainer'>
-                {/* <Grid templateColumns='repeat(6, 1fr)' gap={6}> */}
                         {dataDigmon.map(data => (
                         <div className='listDigmonContainer'>
                             <h4>{data.name}</h4>
-                            {/* <img className='imageDigmonContainer' src={data.img}/> */}
                             <button className='buttonMoreInfoContainer' onClick={()=> onClickButton(data.name)}>More Info's</button>
                         </div>
                         ))}
                 </div>
-                {/* </Grid> */}
             </body>
         );
     }

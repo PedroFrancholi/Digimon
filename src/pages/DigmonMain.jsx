@@ -33,6 +33,7 @@ const DigmonMain = () => {
                         {dataDigmon.map(data => (
                         <div className='listDigmonContainer'>
                             <h4>{data.name}</h4>
+                            <h5>{data.level}</h5>
                             <button className='buttonMoreInfoContainer' onClick={()=> onClickButton(data.name)}>More Info's</button>
                         </div>
                         ))}
